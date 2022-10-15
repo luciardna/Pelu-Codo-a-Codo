@@ -11,11 +11,11 @@ body{
 }
 
   
-ul li{
+nav ul li{
     list-style-type: none;
     margin-right: 25px;
 }
-ul li a{
+nav ul li a{
     text-decoration: none;
     padding: 14px 16px;
     text-align: center;
@@ -24,11 +24,15 @@ ul li a{
     
 }
 
-ul li a:hover {
+nav ul li a:hover {
     background-color: coral;
     border-radius: 30px;
     transition: 0.2s;
   }
+
+header img {
+width: 900px;
+}
 
 #encabezado{
     display: flex;
@@ -39,11 +43,6 @@ ul li a:hover {
 
 h2{
     font-size: 28px;
-}
-
-footer p{
-    display: flex;
-    justify-content: center;
 }
 
 * {
@@ -328,6 +327,68 @@ i {
     letter-spacing: 2px;
   }
   
+/*-------FOOTER ----------------*/
+
+  footer{
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0D7281;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    color: #fff;
+}
+.footer-primero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-primero h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+.footer-primero h4{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 18px;
+}
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0 1rem 0;
+    padding-left: 0;
+}
+.redes li{
+    margin: 0 10px;
+}
+.redes a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes img {
+    width: 30px;
+}
+
+.footer-ultimo{
+    background: #26A7BB;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-ultimo p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
   @media (max-width: 600px) {
     .container4 .box:hover .content {
       transform: translate(0, 3.5rem);
